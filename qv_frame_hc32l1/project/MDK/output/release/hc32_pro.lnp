@@ -1,0 +1,27 @@
+--cpu Cortex-M0+
+".\output\release\startup_hc32l19x.o"
+".\output\release\system_hc32l19x.o"
+".\output\release\interrupts_hc32l19x.o"
+".\output\release\main.o"
+".\output\release\bsp.o"
+".\output\release\ddl.o"
+".\output\release\sysctrl.o"
+".\output\release\qep_hsm.o"
+".\output\release\qep_msm.o"
+".\output\release\qf_act.o"
+".\output\release\qf_actq.o"
+".\output\release\qf_defer.o"
+".\output\release\qf_dyn.o"
+".\output\release\qf_mem.o"
+".\output\release\qf_ps.o"
+".\output\release\qf_qact.o"
+".\output\release\qf_qeq.o"
+".\output\release\qf_qmact.o"
+".\output\release\qf_time.o"
+".\output\release\qv.o"
+".\output\release\qv_port.o"
+".\output\release\period_high.o"
+--library_type=microlib --strict --scatter ".\output\release\hc32_pro.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals
+--list ".\output\release\hc32_pro.map" -o .\output\release\hc32_pro.axf

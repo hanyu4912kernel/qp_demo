@@ -1,0 +1,50 @@
+==>>HC32L19x_Rev1.3.0 Release 2024-11-28
+    1、优化ddl.c的相关delay函数；
+    2、ADC库函数更新：Adc_JqrModeCfg函数修改，添加TS样例，修改adc_scan_sqr_hw_trig；
+    3、PCNT驱动库修改：Pcnt_Init、Pcnt_SetBuf函数修改，超时函数更新；
+    4、RTC函数更新：Rtc_ReadDateTime、Rtc_SetTime、Rtc_Init、Rtc_SetAlarmTime、RTC_CompCfg函数修改，修改RTC样例注释；
+    5、修改LPM库函数，修改SLEEPONEXIT操作；
+    6、LPTIM库函数更新：超时函数更新；
+    7、DMA库函数更新：Dma_SetTransferWidth函数修改；
+    8、修改PCA样例；
+    9、UART样例中Tx引脚初始化时，添加默认电平的配置；
+    10、spi.h内删除Spi_DeInit函数声明；
+    11、添加API说明文档；
+    12、修改adt和dac样例名称，使命名规范化；
+    13、添加GPIO红外样例；
+    14、修改FLASH_TPGS位宽，半字和字编程函数修改地址检查代码，修改编程样例和注释；
+    15、修改下载算法文件，如果程序中WDT使能，添加下载时喂狗动作；
+    16、删除ADC的BGR1.2V采样源；
+    17、删除VC的BGR1.2V输入源，修改vc_bgr1p2_high_irq样例名称；
+    18、删除lvd.c多余的宏定义；
+
+==>>HC32L19x_Rev1.2.0 Release 2022-09-28
+    1、针对安全及速度优化FLASH驱动及FLASH操作模式；
+    
+==>>HC32L19x_Rev1.1.0 Release 2022-07-18
+    1、修改adt.h关于TRIG信号端口的定义
+    2、修改SYSCTRL章节PLL_CR.REFSEL的枚举en_sysctrl_pll_clksource_t成员值的定义
+    3、更新license、logo、FLM相关信息；
+    4、增加通用定时器模式1样例的通道捕获模式设置
+    5、增加(LP)UART超时处理函数;
+    6、I2C样例初始化顺序更新;
+    
+==>>HC32L19x_Rev1.0.3 Release 2020-06-02:
+    1、增加和完善低功耗模式下，对未封出IO的初始化；
+    2、修改adt.h关于TRIG信号端口的定义
+
+==>>HC32L19x_Rev1.0.2 Release 2020-05-26:
+    1、优化(LP)UART波特率算法；
+    2、优化PLL使能配置流程;
+    3、更新FLASH TIMEOUT时间；
+
+==>>HC32L19x_Rev1.0.1 Release 2019-10-26:
+    1、优化系统初始化操作；
+    2、简化系统时钟切换流程，提供“一键切换”API；
+    3、增加SPI操作API，优化API通信样例，简化API操作；
+    4、GPIO初始化增加默认输出电平配置；
+    5、GPIO增加和简化端口复用操作API；
+    6、ddl.h增加寄存器位操作宏；
+
+==>>HC32L19x_Rev1.0.0 Release 2019-07-01:
+    Initial Version
