@@ -54,7 +54,8 @@ typedef struct {
     QEvt super;
 
 // public:
-    uint8_t ticks;
+    uint32_t ticks;
+    uint8_t inner_evt;
 } PeriodicSpecEvt;
 
 //${Shared::AO_Period_High} ..................................................
@@ -63,11 +64,19 @@ extern QActive * const AO_Period_High;
 //${Shared::PeriodHigh_ctor} .................................................
 void PeriodHigh_ctor(void);
 
-//${Shared::AO_Periodic4} ....................................................
-extern QActive * const AO_Periodic4;
+//${Shared::AO_Periodic_Mid} .................................................
+extern QActive * const AO_Periodic_Mid;
 
-//${Shared::Periodic4_ctor} ..................................................
-void Periodic4_ctor(void);
+//${Shared::PeriodMid_ctor} ..................................................
+void PeriodMid_ctor(void);
+
+//${Shared::AO_Periodic_Low} .................................................
+extern QActive * const AO_Periodic_Low;
+
+//${Shared::PeriodLow_ctor} ..................................................
+void PeriodLow_ctor(void);
 //$enddecl${Shared} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+void task_mid(void *par, uint8_t *sig);
+void task_high(void *par, uint8_t *sig);
+void task_low(void *par, uint8_t *sig);
 #endif // APP_H_

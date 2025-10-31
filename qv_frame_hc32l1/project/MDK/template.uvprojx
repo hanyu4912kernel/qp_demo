@@ -414,6 +414,21 @@
               <FileType>1</FileType>
               <FilePath>..\..\qp\bsp.c</FilePath>
             </File>
+            <File>
+              <FileName>task_high.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\source\task_high.c</FilePath>
+            </File>
+            <File>
+              <FileName>task_low.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\source\task_low.c</FilePath>
+            </File>
+            <File>
+              <FileName>task_mid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\source\task_mid.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -428,6 +443,116 @@
               <FileName>sysctrl.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\driver\src\sysctrl.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>bgr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\bgr.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>adt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\adt.c</FilePath>
+            </File>
+            <File>
+              <FileName>aes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\aes.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\bt.c</FilePath>
+            </File>
+            <File>
+              <FileName>crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>dmac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\dmac.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\lpm.c</FilePath>
+            </File>
+            <File>
+              <FileName>lptim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\lptim.c</FilePath>
+            </File>
+            <File>
+              <FileName>lpuart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\lpuart.c</FilePath>
+            </File>
+            <File>
+              <FileName>reset.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\reset.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\timer3.c</FilePath>
+            </File>
+            <File>
+              <FileName>trim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\trim.c</FilePath>
+            </File>
+            <File>
+              <FileName>trng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\trng.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>vc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\vc.c</FilePath>
+            </File>
+            <File>
+              <FileName>wdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\src\wdt.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -528,6 +653,16 @@
               <FileName>period_high.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\qp\period_high.c</FilePath>
+            </File>
+            <File>
+              <FileName>period_mid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\qp\period_mid.c</FilePath>
+            </File>
+            <File>
+              <FileName>period_low.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\qp\period_low.c</FilePath>
             </File>
           </Files>
         </Group>

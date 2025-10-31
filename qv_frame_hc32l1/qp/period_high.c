@@ -48,6 +48,7 @@ typedef struct PeriodHigh {
 
 // public:
     QTimeEvt te;
+    PeriodicSpecEvt periodic_evt;
 } PeriodHigh;
 
 extern PeriodHigh PeriodHigh_inst;
@@ -99,7 +100,6 @@ static QState PeriodHigh_initial(PeriodHigh * const me, void const * const par) 
 
     Q_REQUIRE_ID(300, (e != (QEvt const *)0)
                  && (e->sig == PERIODIC_SPEC_SIG));
-
     QTimeEvt_armX(&me->te,
         Q_EVT_CAST(PeriodicSpecEvt)->ticks,
         Q_EVT_CAST(PeriodicSpecEvt)->ticks);
@@ -122,6 +122,7 @@ static QState PeriodHigh_active(PeriodHigh * const me, QEvt const * const e) {
     switch (e->sig) {
         //${AOs::PeriodHigh::SM::active::TIMEOUT}
         case TIMEOUT_SIG: {
+            task_high(me,&me->periodic_evt.inner_evt);
             status_ = QM_HANDLED();
             break;
         }
@@ -130,7 +131,6 @@ static QState PeriodHigh_active(PeriodHigh * const me, QEvt const * const e) {
             break;
         }
     }
-    Q_UNUSED_PAR(me);
     return status_;
 }
 //$enddef${AOs::PeriodHigh} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

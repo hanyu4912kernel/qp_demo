@@ -29,16 +29,19 @@
  ******************************************************************************
  ** System Clock Frequency (Core Clock) Variable according CMSIS
  ******************************************************************************/
-uint32_t SystemCoreClock = 4000000;
+uint32_t SystemCoreClock = 4800000;
 
-
+void SysTickInit(void)
+{
+    SysTick->LOAD = 0xFFFFFF;
+    SysTick->VAL  = 0;
+	SysTick->CTRL = SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk;	
+}
 //add clock source.
 void SystemCoreClockUpdate (void) // Update SystemCoreClock variable
 {
     SystemCoreClock = Sysctrl_GetHClkFreq();
-    SysTick->LOAD = 0xFFFFFF;
-    SysTick->VAL  = 0;
-	SysTick->CTRL = SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk;
+
 
 }
 
@@ -146,7 +149,8 @@ void SystemInit(void)
     M0P_SYSCTRL->RCL_CR_f.TRIM = (*((volatile uint16_t*) (0x00100C22ul)));
     M0P_SYSCTRL->RCH_CR_f.TRIM = (*((volatile uint16_t*) (0x00100C08ul)));
     SystemCoreClockUpdate();
-	  _InitHidePin();
+	SysTickInit();
+    _InitHidePin();
 }
 
 

@@ -37,34 +37,35 @@
 //$endhead${.::period_mid.c} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #include "qpc.h"               // QP/C real-time event framework
 #include "bsp.h"               // Board Support Package
-#include "app.h"               // Application interface
+#include "qm.h"               // Application interface
 
-//$declare${AOs::Periodic4} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+//$declare${AOs::PeriodMid} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-//${AOs::Periodic4} ..........................................................
-typedef struct Periodic4 {
+//${AOs::PeriodMid} ..........................................................
+typedef struct PeriodMid {
 // protected:
     QMActive super;
 
 // public:
     QTimeEvt te;
-} Periodic4;
+    PeriodicSpecEvt periodic_evt;
+} PeriodMid;
 
-extern Periodic4 Periodic4_inst;
+extern PeriodMid PeriodMid_inst;
 
 // protected:
-static QState Periodic4_initial(Periodic4 * const me, void const * const par);
-static QState Periodic4_active  (Periodic4 * const me, QEvt const * const e);
-static QMState const Periodic4_active_s = {
+static QState PeriodMid_initial(PeriodMid * const me, void const * const par);
+static QState PeriodMid_active  (PeriodMid * const me, QEvt const * const e);
+static QMState const PeriodMid_active_s = {
     QM_STATE_NULL, // superstate (top)
-    Q_STATE_CAST(&Periodic4_active),
+    Q_STATE_CAST(&PeriodMid_active),
     Q_ACTION_NULL, // no entry action
     Q_ACTION_NULL, // no exit action
     Q_ACTION_NULL  // no initial tran.
 };
-//$enddecl${AOs::Periodic4} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//$enddecl${AOs::PeriodMid} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Q_DEFINE_THIS_MODULE("periodic4")
+Q_DEFINE_THIS_MODULE("periodic_mid")
 
 //$skip${QP_VERSION} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 // Check for the minimum required QP version
@@ -72,43 +73,41 @@ Q_DEFINE_THIS_MODULE("periodic4")
 #error qpc version 7.3.0 or higher required
 #endif
 //$endskip${QP_VERSION} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-//$define${Shared::Periodic4_ctor} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+//$define${Shared::PeriodMid_ctor} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-//${Shared::Periodic4_ctor} ..................................................
-void Periodic4_ctor(void) {
-    Periodic4 * const me = &Periodic4_inst;
-    QMActive_ctor(&me->super, Q_STATE_CAST(&Periodic4_initial));
+//${Shared::PeriodMid_ctor} ..................................................
+void PeriodMid_ctor(void) {
+    PeriodMid * const me = &PeriodMid_inst;
+    QMActive_ctor(&me->super, Q_STATE_CAST(&PeriodMid_initial));
     QTimeEvt_ctorX(&me->te, (QActive *)me, TIMEOUT_SIG, 0U);
 }
-//$enddef${Shared::Periodic4_ctor} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-//$define${Shared::AO_Periodic4} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+//$enddef${Shared::PeriodMid_ctor} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//$define${Shared::AO_Periodic_Mid} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-//${Shared::AO_Periodic4} ....................................................
-QActive * const AO_Periodic4 = (QActive *)&Periodic4_inst;
-//$enddef${Shared::AO_Periodic4} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-//$define${AOs::Periodic4} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+//${Shared::AO_Periodic_Mid} .................................................
+QActive * const AO_Periodic_Mid = (QActive *)&PeriodMid_inst;
+//$enddef${Shared::AO_Periodic_Mid} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//$define${AOs::PeriodMid} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-//${AOs::Periodic4} ..........................................................
-Periodic4 Periodic4_inst;
+//${AOs::PeriodMid} ..........................................................
+PeriodMid PeriodMid_inst;
 
-//${AOs::Periodic4::SM} ......................................................
-static QState Periodic4_initial(Periodic4 * const me, void const * const par) {
-    //${AOs::Periodic4::SM::initial}
+//${AOs::PeriodMid::SM} ......................................................
+static QState PeriodMid_initial(PeriodMid * const me, void const * const par) {
+    //${AOs::PeriodMid::SM::initial}
     // the initial event must be provided and must be WORKLOAD_SIG
     QEvt const *e =  (QEvt const *)par;
 
     Q_REQUIRE_ID(300, (e != (QEvt const *)0)
                  && (e->sig == PERIODIC_SPEC_SIG));
-
     QTimeEvt_armX(&me->te,
         Q_EVT_CAST(PeriodicSpecEvt)->ticks,
         Q_EVT_CAST(PeriodicSpecEvt)->ticks);
-    me->toggles = Q_EVT_CAST(PeriodicSpecEvt)->toggles;
 
-    QS_FUN_DICTIONARY(&Periodic4_active);
+    QS_FUN_DICTIONARY(&PeriodMid_active);
 
     static QMTranActTable const tatbl_ = { // tran-action table
-        &Periodic4_active_s, // target state
+        &PeriodMid_active_s, // target state
         {
             Q_ACTION_NULL // zero terminator
         }
@@ -116,17 +115,14 @@ static QState Periodic4_initial(Periodic4 * const me, void const * const par) {
     return QM_TRAN_INIT(&tatbl_);
 }
 
-//${AOs::Periodic4::SM::active} ..............................................
-//${AOs::Periodic4::SM::active}
-static QState Periodic4_active(Periodic4 * const me, QEvt const * const e) {
+//${AOs::PeriodMid::SM::active} ..............................................
+//${AOs::PeriodMid::SM::active}
+static QState PeriodMid_active(PeriodMid * const me, QEvt const * const e) {
     QState status_;
     switch (e->sig) {
-        //${AOs::Periodic4::SM::active::TIMEOUT}
+        //${AOs::PeriodMid::SM::active::TIMEOUT}
         case TIMEOUT_SIG: {
-            for (uint16_t i = me->toggles; i > 0U; --i) {
-                BSP_d3on();
-                BSP_d3off();
-            }
+            task_mid(me, &me->periodic_evt.inner_evt);
             status_ = QM_HANDLED();
             break;
         }
@@ -137,4 +133,4 @@ static QState Periodic4_active(Periodic4 * const me, QEvt const * const e) {
     }
     return status_;
 }
-//$enddef${AOs::Periodic4} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//$enddef${AOs::PeriodMid} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

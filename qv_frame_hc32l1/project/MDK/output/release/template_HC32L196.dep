@@ -1,30 +1,32 @@
 Dependencies for Project 'template', Target 'HC32L196': (DO NOT MODIFY !)
 CompilerVersion: 6240000::V6.24::ARMCLANG
 F (.\startup_hc32l19x.s)(0x68FAF0C6)(--cpu Cortex-M0+ -g --pd "__MICROLIB SETA 1" --diag_suppress=A1950W-I.\RTE\_HC32L196-ID:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include-ID:\software\mdk5\pack\HDSC\HC32L19X\1.0.1\Device\Include--pd "__UVISION_VERSION SETA 543"--pd "_RTE_ SETA 1"-o .\output\release\startup_hc32l19x.o--depend .\output\release\startup_hc32l19x.d)
-F (..\..\mcu\common\system_hc32l19x.c)(0x676AA10F)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/system_hc32l19x.o -MMD)
+F (..\..\mcu\common\system_hc32l19x.c)(0x68FF0E31)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/system_hc32l19x.o -MMD)
 I (..\..\mcu\common\base_types.h)(0x676AA10F)
 I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
 I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
 I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
 I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
 I (..\..\driver\inc\ddl.h)(0x676AA10E)
-I (..\..\mcu\common\board_stkhc32l19x.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
 I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
 I (..\source\ddl_device.h)(0x676B9E88)
-F (..\..\mcu\common\interrupts_hc32l19x.c)(0x676AA10F)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/interrupts_hc32l19x.o -MMD)
+F (..\..\mcu\common\interrupts_hc32l19x.c)(0x68FEDA23)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/interrupts_hc32l19x.o -MMD)
 I (..\..\driver\inc\ddl.h)(0x676AA10E)
 I (..\..\mcu\common\base_types.h)(0x676AA10F)
-I (..\..\mcu\common\board_stkhc32l19x.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
 I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
 I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
 I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
 I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
 I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
 I (..\source\ddl_device.h)(0x676B9E88)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
 F (..\source\main.c)(0x68FB305A)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/main.o -MMD)
 I (..\..\driver\inc\ddl.h)(0x676AA10E)
 I (..\..\mcu\common\base_types.h)(0x676AA10F)
-I (..\..\mcu\common\board_stkhc32l19x.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
 I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
 I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
 I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
@@ -40,8 +42,9 @@ I (..\..\qp\include\qp.h)(0x68490E9E)
 I (..\..\qp\include\qv.h)(0x68490E9E)
 I (..\..\qp\include\qsafe.h)(0x6836C728)
 I (..\..\qp\include\qs_dummy.h)(0x6836C728)
-I (..\..\qp\bsp.h)(0x68FB3081)
-F (..\..\qp\bsp.c)(0x68FB3D17)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/bsp.o -MMD)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
+F (..\..\qp\bsp.c)(0x68FF0E9C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/bsp.o -MMD)
 I (..\..\qp\include\qpc.h)(0x67F36340)
 I (..\..\qp\ports\arm-cm\qv\armclang\qp_port.h)(0x682433E0)
 I (..\..\qp\qp_config.h)(0x683939C4)
@@ -51,14 +54,81 @@ I (..\..\qp\include\qp.h)(0x68490E9E)
 I (..\..\qp\include\qv.h)(0x68490E9E)
 I (..\..\qp\include\qsafe.h)(0x6836C728)
 I (..\..\qp\include\qs_dummy.h)(0x6836C728)
-I (..\..\qp\bsp.h)(0x68FB3081)
-I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
-I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
-I (..\..\qp\qm.h)(0x68FB3A27)
-I (..\source\inc\main.h)(0x68FB3A75)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
 I (..\..\driver\inc\ddl.h)(0x676AA10E)
 I (..\..\mcu\common\base_types.h)(0x676AA10F)
-I (..\..\mcu\common\board_stkhc32l19x.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+I (..\..\qp\qm.h)(0x68FF2EA8)
+I (..\source\inc\main.h)(0x68FB3A75)
+F (..\source\task_high.c)(0x68FF1331)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/task_high.o -MMD)
+I (..\..\qp\qm.h)(0x68FF2EA8)
+I (..\..\qp\include\qpc.h)(0x67F36340)
+I (..\..\qp\ports\arm-cm\qv\armclang\qp_port.h)(0x682433E0)
+I (..\..\qp\qp_config.h)(0x683939C4)
+I (..\..\qp\include\qequeue.h)(0x67BD29F4)
+I (..\..\qp\include\qmpool.h)(0x684A99B8)
+I (..\..\qp\include\qp.h)(0x68490E9E)
+I (..\..\qp\include\qv.h)(0x68490E9E)
+I (..\..\qp\include\qsafe.h)(0x6836C728)
+I (..\..\qp\include\qs_dummy.h)(0x6836C728)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\source\task_low.c)(0x68FF13A9)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/task_low.o -MMD)
+I (..\..\qp\qm.h)(0x68FF2EA8)
+I (..\..\qp\include\qpc.h)(0x67F36340)
+I (..\..\qp\ports\arm-cm\qv\armclang\qp_port.h)(0x682433E0)
+I (..\..\qp\qp_config.h)(0x683939C4)
+I (..\..\qp\include\qequeue.h)(0x67BD29F4)
+I (..\..\qp\include\qmpool.h)(0x684A99B8)
+I (..\..\qp\include\qp.h)(0x68490E9E)
+I (..\..\qp\include\qv.h)(0x68490E9E)
+I (..\..\qp\include\qsafe.h)(0x6836C728)
+I (..\..\qp\include\qs_dummy.h)(0x6836C728)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\source\task_mid.c)(0x68FF1339)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/task_mid.o -MMD)
+I (..\..\qp\qm.h)(0x68FF2EA8)
+I (..\..\qp\include\qpc.h)(0x67F36340)
+I (..\..\qp\ports\arm-cm\qv\armclang\qp_port.h)(0x682433E0)
+I (..\..\qp\qp_config.h)(0x683939C4)
+I (..\..\qp\include\qequeue.h)(0x67BD29F4)
+I (..\..\qp\include\qmpool.h)(0x684A99B8)
+I (..\..\qp\include\qp.h)(0x68490E9E)
+I (..\..\qp\include\qv.h)(0x68490E9E)
+I (..\..\qp\include\qsafe.h)(0x6836C728)
+I (..\..\qp\include\qs_dummy.h)(0x6836C728)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
 I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
 I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
 I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
@@ -66,7 +136,7 @@ I (..\source\ddl_device.h)(0x676B9E88)
 F (..\..\driver\src\ddl.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/ddl.o -MMD)
 I (..\..\driver\inc\ddl.h)(0x676AA10E)
 I (..\..\mcu\common\base_types.h)(0x676AA10F)
-I (..\..\mcu\common\board_stkhc32l19x.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
 I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
 I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
 I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
@@ -77,10 +147,252 @@ F (..\..\driver\src\sysctrl.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-ea
 I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
 I (..\..\driver\inc\ddl.h)(0x676AA10E)
 I (..\..\mcu\common\base_types.h)(0x676AA10F)
-I (..\..\mcu\common\board_stkhc32l19x.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
 I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
 I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
 I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\flash.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/flash.o -MMD)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\bgr.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/bgr.o -MMD)
+I (..\..\driver\inc\bgr.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\adc.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/adc.o -MMD)
+I (..\..\driver\inc\adc.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\adt.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/adt.o -MMD)
+I (..\..\driver\inc\adt.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\aes.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/aes.o -MMD)
+I (..\..\driver\inc\aes.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\bt.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/bt.o -MMD)
+I (..\..\driver\inc\bt.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\crc.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/crc.o -MMD)
+I (..\..\driver\inc\crc.h)(0x676AA10E)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\dmac.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/dmac.o -MMD)
+I (..\..\driver\inc\dmac.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\gpio.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/gpio.o -MMD)
+I (..\..\driver\inc\gpio.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\i2c.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/i2c.o -MMD)
+I (..\..\driver\inc\i2c.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\lpm.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/lpm.o -MMD)
+I (..\..\driver\inc\lpm.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\lptim.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/lptim.o -MMD)
+I (..\..\driver\inc\lptim.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\lpuart.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/lpuart.o -MMD)
+I (..\..\driver\inc\lpuart.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\reset.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/reset.o -MMD)
+I (..\..\driver\inc\reset.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\rtc.c)(0x676B612E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/rtc.o -MMD)
+I (..\..\driver\inc\rtc.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\spi.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/spi.o -MMD)
+I (..\..\driver\inc\spi.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\timer3.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/timer3.o -MMD)
+I (..\..\driver\inc\timer3.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\trim.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/trim.o -MMD)
+I (..\..\driver\inc\trim.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\trng.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/trng.o -MMD)
+I (..\..\driver\inc\trng.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\uart.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/uart.o -MMD)
+I (..\..\driver\inc\uart.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\vc.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/vc.o -MMD)
+I (..\..\driver\inc\vc.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+F (..\..\driver\src\wdt.c)(0x676AA10E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/wdt.o -MMD)
+I (..\..\driver\inc\wdt.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
 I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
 I (..\source\ddl_device.h)(0x676B9E88)
 F (..\readme.txt)(0x676AA10F)()
@@ -220,7 +532,7 @@ I (..\..\qp\include\qmpool.h)(0x684A99B8)
 I (..\..\qp\include\qp.h)(0x68490E9E)
 I (..\..\qp\include\qv.h)(0x68490E9E)
 I (..\..\qp\include\qsafe.h)(0x6836C728)
-F (..\..\qp\period_high.c)(0x68FB3A4A)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/period_high.o -MMD)
+F (..\..\qp\period_high.c)(0x68FF1AE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/period_high.o -MMD)
 I (..\..\qp\include\qpc.h)(0x67F36340)
 I (..\..\qp\ports\arm-cm\qv\armclang\qp_port.h)(0x682433E0)
 I (..\..\qp\qp_config.h)(0x683939C4)
@@ -230,5 +542,59 @@ I (..\..\qp\include\qp.h)(0x68490E9E)
 I (..\..\qp\include\qv.h)(0x68490E9E)
 I (..\..\qp\include\qsafe.h)(0x6836C728)
 I (..\..\qp\include\qs_dummy.h)(0x6836C728)
-I (..\..\qp\bsp.h)(0x68FB3081)
-I (..\..\qp\qm.h)(0x68FB3A27)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+I (..\..\qp\qm.h)(0x68FF2EA8)
+F (..\..\qp\period_mid.c)(0x68FF1AE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/period_mid.o -MMD)
+I (..\..\qp\include\qpc.h)(0x67F36340)
+I (..\..\qp\ports\arm-cm\qv\armclang\qp_port.h)(0x682433E0)
+I (..\..\qp\qp_config.h)(0x683939C4)
+I (..\..\qp\include\qequeue.h)(0x67BD29F4)
+I (..\..\qp\include\qmpool.h)(0x684A99B8)
+I (..\..\qp\include\qp.h)(0x68490E9E)
+I (..\..\qp\include\qv.h)(0x68490E9E)
+I (..\..\qp\include\qsafe.h)(0x6836C728)
+I (..\..\qp\include\qs_dummy.h)(0x6836C728)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+I (..\..\qp\qm.h)(0x68FF2EA8)
+F (..\..\qp\period_low.c)(0x68FF1AE0)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../../mcu/common -I ../../driver/inc -I ../source -I ../../qp/include -I ../../qp/ports/arm-cm/qv/armclang -I ../../qp -I ../source/inc-I./RTE/_HC32L196-ID:/software/mdk5/pack/ARM/CMSIS/6.2.0/CMSIS/Core/Include-ID:/software/mdk5/pack/HDSC/HC32L19X/1.0.1/Device/Include-D__UVISION_VERSION="543" -D_RTE_-o ./output/release/period_low.o -MMD)
+I (..\..\qp\include\qpc.h)(0x67F36340)
+I (..\..\qp\ports\arm-cm\qv\armclang\qp_port.h)(0x682433E0)
+I (..\..\qp\qp_config.h)(0x683939C4)
+I (..\..\qp\include\qequeue.h)(0x67BD29F4)
+I (..\..\qp\include\qmpool.h)(0x684A99B8)
+I (..\..\qp\include\qp.h)(0x68490E9E)
+I (..\..\qp\include\qv.h)(0x68490E9E)
+I (..\..\qp\include\qsafe.h)(0x6836C728)
+I (..\..\qp\include\qs_dummy.h)(0x6836C728)
+I (..\..\qp\bsp.h)(0x68FEDE54)
+I (..\..\driver\inc\flash.h)(0x676AA10E)
+I (..\..\driver\inc\ddl.h)(0x676AA10E)
+I (..\..\mcu\common\base_types.h)(0x676AA10F)
+I (..\..\mcu\common\board_stkhc32l19x.h)(0x69044CF3)
+I (..\..\mcu\common\hc32l19x.h)(0x676AA10F)
+I (D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h)(0x68CA5F37)
+I (..\..\mcu\common\system_hc32l19x.h)(0x676AA10F)
+I (..\..\driver\inc\sysctrl.h)(0x676AA10E)
+I (..\..\mcu\common\interrupts_hc32l19x.h)(0x676AA10F)
+I (..\source\ddl_device.h)(0x676B9E88)
+I (..\..\qp\qm.h)(0x68FF2EA8)

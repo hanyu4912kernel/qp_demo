@@ -22,7 +22,7 @@
  ******************************************************************************/
 #include "ddl.h"
 #include "interrupts_hc32l19x.h"
-
+#include "bsp.h"
 /*******************************************************************************
  *                       IRQ WEAK DEFINE
  ******************************************************************************/
@@ -104,7 +104,7 @@ void EnableNvic(IRQn_Type enIrq, en_irq_level_t enLevel, boolean_t bEn)
 void HardFault_Handler(void)
 {    
     volatile int a = 0;
-
+	assert_failed("hard", 0);
     while( 0 == a)
     {
         ;

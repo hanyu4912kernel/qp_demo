@@ -29,7 +29,7 @@
 #define STK_LED_PIN         GpioPin14
 
 ///< XTH
-#define SYSTEM_XTH          (32*1000*1000u)     ///< 32MHz
+#define SYSTEM_XTH          (8*1000*1000u)     ///< 32MHz
 
 #define STK_XTHI_PORT       GpioPortF
 #define STK_XTHI_PIN        GpioPin0

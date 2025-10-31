@@ -31,9 +31,11 @@
 //============================================================================
 #ifndef BSP_H_
 #define BSP_H_
-
 #define BSP_TICKS_PER_SEC 2500U
+
+#include "flash.h"
+
 void BSP_init(void);
 void BSP_start(void);
-
+void assert_failed(char const * const module, int const id);
 #endif // BSP_H_

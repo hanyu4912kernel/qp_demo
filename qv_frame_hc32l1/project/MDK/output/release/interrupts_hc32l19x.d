@@ -4,4 +4,5 @@
   ..\..\mcu\common\hc32l19x.h \
   D:\software\mdk5\pack\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm0plus.h \
   ..\..\mcu\common\system_hc32l19x.h ..\..\driver\inc\sysctrl.h \
-  ..\..\mcu\common\interrupts_hc32l19x.h ..\source\ddl_device.h
+  ..\..\mcu\common\interrupts_hc32l19x.h ..\source\ddl_device.h \
+  ..\..\qp\bsp.h ..\..\driver\inc\flash.h

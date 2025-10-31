@@ -17,7 +17,9 @@
   <!--${Shared::PeriodicSpecEvt}-->
   <class name="PeriodicSpecEvt" superclass="qpc::QEvt">
    <!--${Shared::PeriodicSpecEvt::ticks}-->
-   <attribute name="ticks" type="uint8_t" visibility="0x00" properties="0x00"/>
+   <attribute name="ticks" type="uint32_t" visibility="0x00" properties="0x00"/>
+   <!--${Shared::PeriodicSpecEvt::inner_evt}-->
+   <attribute name="inner_evt" type="uint8_t" visibility="0x00" properties="0x00"/>
   </class>
   <!--${Shared::AO_Period_High}-->
   <attribute name="AO_Period_High" type="QActive * const" visibility="0x00" properties="0x00">
@@ -29,14 +31,24 @@
 QMActive_ctor(&amp;me-&gt;super, Q_STATE_CAST(&amp;PeriodHigh_initial));
 QTimeEvt_ctorX(&amp;me-&gt;te, (QActive *)me, TIMEOUT_SIG, 0U);</code>
   </operation>
-  <!--${Shared::AO_Periodic4}-->
-  <attribute name="AO_Periodic4" type="QActive * const" visibility="0x00" properties="0x00">
-   <code>= (QActive *)&amp;Periodic4_inst;</code>
+  <!--${Shared::AO_Periodic_Mid}-->
+  <attribute name="AO_Periodic_Mid" type="QActive * const" visibility="0x00" properties="0x00">
+   <code>= (QActive *)&amp;PeriodMid_inst;</code>
   </attribute>
-  <!--${Shared::Periodic4_ctor}-->
-  <operation name="Periodic4_ctor" type="void" visibility="0x00" properties="0x00">
-   <code>Periodic4 * const me = &amp;Periodic4_inst;
-QMActive_ctor(&amp;me-&gt;super, Q_STATE_CAST(&amp;Periodic4_initial));
+  <!--${Shared::PeriodMid_ctor}-->
+  <operation name="PeriodMid_ctor" type="void" visibility="0x00" properties="0x00">
+   <code>PeriodMid * const me = &amp;PeriodMid_inst;
+QMActive_ctor(&amp;me-&gt;super, Q_STATE_CAST(&amp;PeriodMid_initial));
+QTimeEvt_ctorX(&amp;me-&gt;te, (QActive *)me, TIMEOUT_SIG, 0U);</code>
+  </operation>
+  <!--${Shared::AO_Periodic_Low}-->
+  <attribute name="AO_Periodic_Low" type="QActive * const" visibility="0x00" properties="0x00">
+   <code>= (QActive *)&amp;PeriodLow_inst;</code>
+  </attribute>
+  <!--${Shared::PeriodLow_ctor}-->
+  <operation name="PeriodLow_ctor" type="void" visibility="0x00" properties="0x00">
+   <code>PeriodLow * const me = &amp;PeriodLow_inst;
+QMActive_ctor(&amp;me-&gt;super, Q_STATE_CAST(&amp;PeriodLow_initial));
 QTimeEvt_ctorX(&amp;me-&gt;te, (QActive *)me, TIMEOUT_SIG, 0U);</code>
   </operation>
  </package>
@@ -48,6 +60,8 @@ QTimeEvt_ctorX(&amp;me-&gt;te, (QActive *)me, TIMEOUT_SIG, 0U);</code>
    <attribute name="te" type="QTimeEvt" visibility="0x00" properties="0x00"/>
    <!--${AOs::PeriodHigh::inst}-->
    <attribute name="inst" type="PeriodHigh" visibility="0x00" properties="0x01"/>
+   <!--${AOs::PeriodHigh::periodic_evt}-->
+   <attribute name="periodic_evt" type="PeriodicSpecEvt" visibility="0x00" properties="0x00"/>
    <!--${AOs::PeriodHigh::SM}-->
    <statechart properties="0x02">
     <!--${AOs::PeriodHigh::SM::initial}-->
@@ -57,7 +71,6 @@ QEvt const *e =  (QEvt const *)par;
 
 Q_REQUIRE_ID(300, (e != (QEvt const *)0)
              &amp;&amp; (e-&gt;sig == PERIODIC_SPEC_SIG));
-
 QTimeEvt_armX(&amp;me-&gt;te,
     Q_EVT_CAST(PeriodicSpecEvt)-&gt;ticks,
     Q_EVT_CAST(PeriodicSpecEvt)-&gt;ticks);</action>
@@ -69,55 +82,90 @@ QTimeEvt_armX(&amp;me-&gt;te,
     <state name="active">
      <!--${AOs::PeriodHigh::SM::active::TIMEOUT}-->
      <tran trig="TIMEOUT">
-      <action brief="long-RTC"/>
+      <action brief="long-RTC">task_high(me,&amp;me-&gt;periodic_evt.inner_evt);</action>
       <tran_glyph conn="2,20,3,-1,40">
        <action box="0,-2,19,2"/>
       </tran_glyph>
      </tran>
      <state_glyph node="2,6,44,18"/>
     </state>
-    <state_diagram size="50,28"/>
+    <state_diagram size="71,58"/>
    </statechart>
   </class>
-  <!--${AOs::Periodic4}-->
-  <class name="Periodic4" superclass="qpc::QMActive">
-   <!--${AOs::Periodic4::te}-->
+  <!--${AOs::PeriodMid}-->
+  <class name="PeriodMid" superclass="qpc::QMActive">
+   <!--${AOs::PeriodMid::te}-->
    <attribute name="te" type="QTimeEvt" visibility="0x00" properties="0x00"/>
-   <!--${AOs::Periodic4::inst}-->
-   <attribute name="inst" type="Periodic4" visibility="0x00" properties="0x01"/>
-   <!--${AOs::Periodic4::SM}-->
+   <!--${AOs::PeriodMid::inst}-->
+   <attribute name="inst" type="PeriodMid" visibility="0x00" properties="0x01"/>
+   <!--${AOs::PeriodMid::periodic_evt}-->
+   <attribute name="periodic_evt" type="PeriodicSpecEvt" visibility="0x00" properties="0x00"/>
+   <!--${AOs::PeriodMid::SM}-->
    <statechart properties="0x02">
-    <!--${AOs::Periodic4::SM::initial}-->
+    <!--${AOs::PeriodMid::SM::initial}-->
     <initial target="../1">
      <action>// the initial event must be provided and must be WORKLOAD_SIG
 QEvt const *e =  (QEvt const *)par;
 
 Q_REQUIRE_ID(300, (e != (QEvt const *)0)
              &amp;&amp; (e-&gt;sig == PERIODIC_SPEC_SIG));
-
 QTimeEvt_armX(&amp;me-&gt;te,
     Q_EVT_CAST(PeriodicSpecEvt)-&gt;ticks,
-    Q_EVT_CAST(PeriodicSpecEvt)-&gt;ticks);
-me-&gt;toggles = Q_EVT_CAST(PeriodicSpecEvt)-&gt;toggles;</action>
+    Q_EVT_CAST(PeriodicSpecEvt)-&gt;ticks);</action>
      <initial_glyph conn="2,4,5,1,46,4,-2">
       <action box="0,-2,6,2"/>
      </initial_glyph>
     </initial>
-    <!--${AOs::Periodic4::SM::active}-->
+    <!--${AOs::PeriodMid::SM::active}-->
     <state name="active">
-     <!--${AOs::Periodic4::SM::active::TIMEOUT}-->
+     <!--${AOs::PeriodMid::SM::active::TIMEOUT}-->
      <tran trig="TIMEOUT">
-      <action brief="long-RTC">for (uint16_t i = me-&gt;toggles; i &gt; 0U; --i) {
-    BSP_d3on();
-    BSP_d3off();
-}</action>
+      <action brief="long-RTC">task_mid(me, &amp;me-&gt;periodic_evt.inner_evt);</action>
       <tran_glyph conn="2,20,3,-1,40">
        <action box="0,-2,19,2"/>
       </tran_glyph>
      </tran>
      <state_glyph node="2,6,44,18"/>
     </state>
-    <state_diagram size="50,28"/>
+    <state_diagram size="71,58"/>
+   </statechart>
+  </class>
+  <!--${AOs::PeriodLow}-->
+  <class name="PeriodLow" superclass="qpc::QMActive">
+   <!--${AOs::PeriodLow::te}-->
+   <attribute name="te" type="QTimeEvt" visibility="0x00" properties="0x00"/>
+   <!--${AOs::PeriodLow::inst}-->
+   <attribute name="inst" type="PeriodLow" visibility="0x00" properties="0x01"/>
+   <!--${AOs::PeriodLow::periodic_evt}-->
+   <attribute name="periodic_evt" type="PeriodicSpecEvt" visibility="0x00" properties="0x00"/>
+   <!--${AOs::PeriodLow::SM}-->
+   <statechart properties="0x02">
+    <!--${AOs::PeriodLow::SM::initial}-->
+    <initial target="../1">
+     <action>// the initial event must be provided and must be WORKLOAD_SIG
+QEvt const *e =  (QEvt const *)par;
+
+Q_REQUIRE_ID(300, (e != (QEvt const *)0)
+             &amp;&amp; (e-&gt;sig == PERIODIC_SPEC_SIG));
+QTimeEvt_armX(&amp;me-&gt;te,
+    Q_EVT_CAST(PeriodicSpecEvt)-&gt;ticks,
+    Q_EVT_CAST(PeriodicSpecEvt)-&gt;ticks);</action>
+     <initial_glyph conn="2,4,5,1,46,4,-2">
+      <action box="0,-2,6,2"/>
+     </initial_glyph>
+    </initial>
+    <!--${AOs::PeriodLow::SM::active}-->
+    <state name="active">
+     <!--${AOs::PeriodLow::SM::active::TIMEOUT}-->
+     <tran trig="TIMEOUT">
+      <action brief="long-RTC">task_low(me, &amp;me-&gt;periodic_evt.inner_evt);</action>
+      <tran_glyph conn="2,20,3,-1,40">
+       <action box="0,-2,19,2"/>
+      </tran_glyph>
+     </tran>
+     <state_glyph node="2,6,44,18"/>
+    </state>
+    <state_diagram size="71,58"/>
    </statechart>
   </class>
  </package>
@@ -129,7 +177,9 @@ me-&gt;toggles = Q_EVT_CAST(PeriodicSpecEvt)-&gt;toggles;</action>
 #define QM_H_
 #include &quot;qpc.h&quot;
 $declare ${Shared}
-
+void task_mid(void *par, uint8_t *sig);
+void task_high(void *par, uint8_t *sig);
+void task_low(void *par, uint8_t *sig);
 #endif // APP_H_</text>
   </file>
   <!--${.::period_high.c}-->
@@ -150,15 +200,29 @@ $define ${AOs::PeriodHigh}</text>
   <file name="period_mid.c">
    <text>#include &quot;qpc.h&quot;               // QP/C real-time event framework
 #include &quot;bsp.h&quot;               // Board Support Package
-#include &quot;app.h&quot;               // Application interface
+#include &quot;qm.h&quot;               // Application interface
 
-$declare ${AOs::Periodic4}
+$declare ${AOs::PeriodMid}
 
-Q_DEFINE_THIS_MODULE(&quot;periodic4&quot;)
+Q_DEFINE_THIS_MODULE(&quot;periodic_mid&quot;)
 
-$define ${Shared::Periodic4_ctor}
-$define ${Shared::AO_Periodic4}
-$define ${AOs::Periodic4}</text>
+$define ${Shared::PeriodMid_ctor}
+$define ${Shared::AO_Periodic_Mid}
+$define ${AOs::PeriodMid}</text>
+  </file>
+  <!--${.::period_low.c}-->
+  <file name="period_low.c">
+   <text>#include &quot;qpc.h&quot;               // QP/C real-time event framework
+#include &quot;bsp.h&quot;               // Board Support Package
+#include &quot;qm.h&quot;               // Application interface
+
+$declare ${AOs::PeriodLow}
+
+Q_DEFINE_THIS_MODULE(&quot;periodic_lwo&quot;)
+
+$define ${Shared::PeriodLow_ctor}
+$define ${Shared::AO_Periodic_Low}
+$define ${AOs::PeriodLow}</text>
   </file>
  </directory>
 </model>
