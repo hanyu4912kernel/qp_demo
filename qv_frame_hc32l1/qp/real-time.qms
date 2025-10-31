@@ -9,13 +9,14 @@
   <item name="backups">0</item>
  </group>
  <group name="windows">
-  <item id=".::period_high.c">0,0,596,300</item>
-  <item id="AOs::PeriodHigh::SM">466,260,640,480</item>
-  <item id=".::period_mid.c">0,300,596,300</item>
-  <item id=".::qm.h">510,0,596,300</item>
+  <item id=".::period_high.c">-76,0,596,300</item>
+  <item id="AOs::PeriodHigh::SM">520,0,640,480</item>
+  <item id=".::period_mid.c">0,440,596,300</item>
+  <item id=".::qm.h">607,440,596,300</item>
   <item id="AOs::PeriodMid::SM">0,260,640,480</item>
-  <item id=".::period_low.c">510,440,596,300</item>
-  <item id="AOs::PeriodLow::SM">0,0,1106,740,*</item>
+  <item id=".::period_low.c">607,0,596,300</item>
+  <item id="AOs::PeriodLow::SM">97,0,1106,740</item>
+  <item id=".::ttsched.c">0,0,1203,740,*</item>
  </group>
  <group name="search">
   <item name="options">2032128</item>
